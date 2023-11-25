@@ -1,0 +1,306 @@
+* {
+    margin: 0em;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0d6b6;
+    font-size: 1.2em;
+    font-family: Roboto, Calibri, Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ff7300;
+    color: white;
+    margin: 0.5em 0em 1.5em 0em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+footer {
+    background-color: orange;
+    padding: 1.5em;
+    border-radius: 20px;
+    margin: 1.2em 0em;
+}
+
+section, article {
+    background-color: #f5ffc6;
+    border: 2px solid black;
+    border-radius: 3em;
+    margin-bottom: 1.5em;
+    padding: 2em;
+}
+
+aside {
+    font-size: 0.8em;
+    padding: 1.5em;
+    background-color: bisque;
+    border: 2px solid black;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: orangered;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: orange;
+}
+
+h2, h3 {
+    margin-bottom: 0.2em;
+    font-family: 'Calibri', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    text-indent: 3em;
+    margin: 0.5em 0em;
+}
+
+ul {
+    text-indent: 3em;
+    list-style-type: square; 
+    list-style-position: inside; 
+}
+
+aside p, footer p {
+    text-indent: 0em;
+    margin: 0.25em 0em;
+}
+
+aside h2 {
+    font-size: 1.8em;
+    color:brown;
+}
+
+main a {
+    text-decoration: none;
+    color: orange;
+}
+
+main a:visited {
+    text-decoration: none;
+    color:brown;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+main a:active {
+    text-decoration: underline;
+    color:rgb(216, 97, 252);
+}
+
+header nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 1.2em 1.2em;
+    color: white;
+}
+
+header nav a:hover {
+    background-color: #b46b6b;
+}
+
+nav a i {
+    margin-right: 0.5em;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 50%
+}
+
+table caption {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.2em;
+    margin-top: 0.2em;
+    caption-side: bottom;
+}
+
+tr:nth-child(odd) {
+    background-color: bisque;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+thead th {
+    background-color: orange;
+    color: black;
+}
+
+fieldset {
+    background-color: #fcd896;
+    font-size: 0.8em;
+    border-radius: 20px;
+}
+
+textarea {
+    margin: 0.8em 0em;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+form p {
+    text-indent: 0em;
+    text-align: left;
+    padding: 0.8em 0em;
+}
+
+form aside {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ff7300;
+    color: white;
+    border-radius: 25px;
+    padding: 0.8em;
+    font-weight: bold;
+    border: 2px outset gray;
+}
+
+form button img{
+    margin: 0em 0.5em;
+}
+
+input {
+    border-radius: 12px;
+    padding-left: 0.5em;
+}
+
+input:focus {
+    background-color: #f5ffc6;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-left: 0.5em;
+}
+
+#columnsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#columnLeft, #columnRight {
+    flex: 20%;
+}
+
+#columnMiddle {
+    flex: 60%;
+}
+
+#savedPetsCount {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: orangered;
+}
+
+#icons {
+    display:flex;
+    justify-content: space-between;
+}
+
+.listOptions {
+    list-style-type: none;
+    text-indent: 0em;
+}
+
+.listOptions li {
+    padding: 0.5em 0em;
+}
+
+.contactParagraph {
+    margin: 1.5em 0em;
+}
+
+.contactButton, .contactButton:visited {
+    text-indent: 0em;
+    background-color: orange;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    width: 0.2vh;
+    padding: 0.5em;
+}
+
+.contactButton:hover, .contactButton:active {
+    background-color: brown;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #columnsContainer, body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    aside {
+        margin: 0.5em 0em 1.5em 0em;
+    }
+
+    ul {
+        text-indent: 0em;
+    }
+
+    iframe {
+        width: 80%;
+        height: 80%;
+    }
+}

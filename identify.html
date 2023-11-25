@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+	<meta charset="utf-8">
+	<title>Identify yourself - Pet Adoption Service</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/21ac4cd809.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Virtual Pet Adoption Service</h1>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="adopt.html"><i class="fa-solid fa-dog"></i>Adopt a Pet</a>
+            <a href="identify.html"><i class="fa-solid fa-id-badge"></i>Identify yourself</a>
+            <a href="contact.html"><i class="fa-solid fa-headset"></i>Contact</a>
+            <a href="about.html"><i class="fa-solid fa-user-nurse"></i>About us</a>
+        </nav>
+    </header>	
+    <main>
+        <article>
+            <h2>Tell us about you</h2>
+            <p>
+                Fill this form so that we can learn about you and offer the best experience.
+            </p>
+            <form method="post" action="https://webdevcit.com/displayvalues.php" target="_blank">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <p>
+                        <label for="username">Name <em>(required)</em>:</label>
+                        <input type="text" name="nameOfUser" required autocomplete="on" autofocus id="username" placeholder="Introduce your name">
+                    </p>
+                    <p>
+                        <label for="userEmail">Email address <em>(required)</em>:</label>
+                        <input type="email" name="emailOfUser" required autocomplete="on" id="userEmail" aria-describedby="passwordRequirements" placeholder="Introduce your email">
+                        <em id="passwordRequirements">At least one uppercase letter, one lowercase letter and a symbol.</em>
+                    </p>
+                    <p>
+                        <label for="birthdate">Date of birth <em>(required)</em>:</label>
+                        <input type="date" name="dateOfBirth" required id="birthdate">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Is this the first time you adopt?</legend>
+                    <ul class="listOptions">
+                        <li>
+                            <label for="firstAdoptionYes">Yes</label>
+                            <input id="firstAdoptionYes" type="radio" name="isFirstAdoption" value="yes">
+                        </li>
+                        <li>
+                            <label for="firstAdoptionNo">No</label>
+                            <input id="firstAdoptionNo" type="radio" name="isFirstAdoption" value="no">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>What are your intentions for this adoption?</legend>
+                    <p>
+                        <label>Type of pet you want:
+                            <select name="petType" required>
+                                <option selected disabled value="">Please select...</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="rabbit">Rabbit</option>
+                                <option value="parrot">Parrot</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="userAdoptionPlan">How will you provide a good home for the pet?</label>
+                        <textarea id="userAdoptionPlan" name="adoptionPlan" cols="100" rows="10" placeholder="Explain your idea for providing a home of the pet" required></textarea>
+                        
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Optional services</legend>
+                    <p>
+                        Select the services you are interested in, if any:
+                    </p>
+                    <ul class="listOptions">
+                        <li>
+                            <label for="checkCommunities">Online social communities</label>
+                            <input id="checkCommunities" type="checkbox" name="services[]" value="communities">
+                        </li>
+                        <li>
+                            <label for="checkMultiplayer">Multiplayer challenges</label>
+                            <input id="checkMultiplayer" type="checkbox" name="services[]" value="multiplayer">
+                        </li>
+                        <li>
+                            <label for="checkStoryline">Create a storyline for a virtual pet</label>
+                            <input id="checkStoryline" type="checkbox" name="services[]" value="storyline">
+                        </li>
+                        <li>
+                            <label for="checkCreation">Create a virtual pet</label>
+                            <input id="checkCreation" type="checkbox" name="services[]" value="creation">
+                        </li>
+                    </ul>
+                    <p>
+                        <label for="storylineFile">Provide a storyline of the pet if you want:</label>
+                        <input id="storylineFile" type="file">
+                    </p>
+                    <p>
+                        <label for="petPictureFile">Provide a picture of the pet if you want:</label>
+                        <input id="petPictureFile" type="file">
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">
+                        <img alt="Submit Icon" src="images/submit.png">
+                        Submit
+                    </button>
+                    <button type="reset">
+                        <img alt="Reset Icon" src="images/reset.png">
+                        Reset
+                    </button>
+                </p>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <details>
+            <summary>&copy; 2023 Ivan Menendez</summary>
+            <p>Email address: <a href="mailto:ivan.menendezmosegui@mycit.ie">ivan.menendezmosegui@mycit.ie</a></p>
+            <p>Web Development Fundamentals (Munster Technological University)</p>
+        </details>
+    </footer>
+</body>
+</html>
